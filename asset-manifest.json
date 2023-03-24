@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/shipments-Crud-page/static/css/main.7acaea2f.css",
+    "main.js": "/shipments-Crud-page/static/js/main.06cd6b0b.js",
+    "index.html": "/shipments-Crud-page/index.html",
+    "main.7acaea2f.css.map": "/shipments-Crud-page/static/css/main.7acaea2f.css.map",
+    "main.06cd6b0b.js.map": "/shipments-Crud-page/static/js/main.06cd6b0b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7acaea2f.css",
+    "static/js/main.06cd6b0b.js"
+  ]
+}
