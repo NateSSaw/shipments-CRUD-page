@@ -25,14 +25,12 @@ th {
 }
 
 td {
+  padding: 5px;
+    font-size: 14px;
   border-bottom: 1px solid #ccc;
   /* границы между столбцами */
 }
-.table-row {
-  padding: 5px;
-  font-size: 12px;
-  
-}
+
 
 .edit, .delete {
   height: 30px;
@@ -48,7 +46,7 @@ td {
   margin-right: 5px;
 }
 
-/* .modal {
+.modal {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -131,4 +129,4 @@ td {
   to {
     transform: translateY(0);
   }
-} */
+}

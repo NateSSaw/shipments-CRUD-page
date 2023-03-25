@@ -1,5 +1,4 @@
 import { nanoid } from 'nanoid';
-import { Modal } from 'components/Modal/Modal';
 export const TableRow = ({ data, onDelete, onShow }) => {
   return (
     <tbody>
@@ -14,7 +13,7 @@ export const TableRow = ({ data, onDelete, onShow }) => {
               <td>{status}</td>
               <td>{consignee}</td>
               <td>
-                <button type="button" onClick={() => onShow(orderNo)}>
+                <button type="button" obj={orderNo} onClick={onShow}>
                   show
                 </button>
                 <button type="button" onClick={() => onDelete(orderNo)}>

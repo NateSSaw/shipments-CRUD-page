@@ -1,22 +1,21 @@
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 
-export const Modal = ({ data, key }) => {
-  const [isModal, setModal] = useState(false);
-  const { orderNo, date, customer, trackingNo, status, consignee } = data;
+export const Modal = ({ closeModal }) => {
   useEffect(() => {
     const handlePressESC = e => {
-      if (e.code === 'Escape') setModal(false);
+      console.log('object :>> ', Date.now());
+      if (e.code === 'Escape') closeModal();
     };
 
     window.addEventListener('keydown', handlePressESC);
     return () => {
       window.removeEventListener('keydown', handlePressESC);
     };
-  }, [isModal]);
+  }, [closeModal]);
 
   return (
     <div className="modal">
-      <div className="modal-dialog" onClick={e => e.stopPropagation()}>
+      <div className="modal-dialog">
         <div className="modal-header">
           <h2>Shipment Details</h2>
 
@@ -24,34 +23,34 @@ export const Modal = ({ data, key }) => {
             type="button"
             className="btn-close"
             aria-label="Close"
-            onClick={() => setModal(true)}
+            onClick={closeModal}
           ></button>
         </div>
         <div className="modal-body">
           <ul>
             <li>
               <h3>orderNo</h3>
-              <p>{orderNo}</p>
+              <p></p>
             </li>
             <li>
               <h3>date</h3>
-              <p>{date}</p>
+              <p></p>
             </li>
             <li>
               <h3>customer</h3>
-              <p>{customer}</p>
+              <p></p>
             </li>
             <li>
               <h3>trackingNo</h3>
-              <p>{trackingNo}</p>
+              <p></p>
             </li>
             <li>
               <h3>consignee</h3>
-              <p>{consignee}</p>
+              <p></p>
             </li>
             <li>
               <h3>status</h3>
-              <p>{status}</p>
+              <p></p>
             </li>
           </ul>
         </div>
