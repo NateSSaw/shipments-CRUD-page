@@ -1,10 +1,12 @@
-export const TableRow = ({ data }) => {
+import { nanoid } from 'nanoid';
+import { Modal } from 'components/Modal/Modal';
+export const TableRow = ({ data, onDelete, onShow }) => {
   return (
     <tbody>
       {data.map(
         ({ orderNo, date, customer, trackingNo, status, consignee }) => {
           return (
-            <tr key={orderNo}>
+            <tr key={nanoid()}>
               <td>{orderNo}</td>
               <td>{date}</td>
               <td>{customer}</td>
@@ -12,8 +14,12 @@ export const TableRow = ({ data }) => {
               <td>{status}</td>
               <td>{consignee}</td>
               <td>
-                <button type="button">show</button>
-                <button type="button">delete</button>
+                <button type="button" onClick={() => onShow(orderNo)}>
+                  show
+                </button>
+                <button type="button" onClick={() => onDelete(orderNo)}>
+                  delete
+                </button>
               </td>
             </tr>
           );
