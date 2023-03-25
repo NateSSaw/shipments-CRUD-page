@@ -14,11 +14,10 @@ export const App = () => {
 
   const closeModal = () => setIsShowModal(false);
 
-  const handleShow = orderNo => {
-    setShipments(prevShipments => {
-      return prevShipments.filter(shipments => shipments.orderNo === orderNo);
-    });
-  };
+  // const handleShow = orderNo => {
+  //   setShipments(prevShipments => {
+  //     return prevShipments.filter(shipments => shipments.orderNo === orderNo);
+  //   });
 
   const handleDelete = orderNo => {
     setShipments(prevShipments => {
@@ -32,7 +31,7 @@ export const App = () => {
         <TableHeader />
         <TableRow data={shipments} onShow={showModal} onDelete={handleDelete} />
       </ShipmentsTable>
-      {isShowModal && <Modal closeModal={closeModal}></Modal>}
+      {isShowModal && <Modal data={shipments} closeModal={closeModal}></Modal>}
     </div>
   );
 };

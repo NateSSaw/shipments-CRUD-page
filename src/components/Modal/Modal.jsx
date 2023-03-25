@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 
-export const Modal = ({ closeModal }) => {
+export const Modal = ({ closeModal, data }) => {
+  const { orderNo, date, customer, trackingNo, status, consignee } = data;
   useEffect(() => {
     const handlePressESC = e => {
       console.log('object :>> ', Date.now());
@@ -30,27 +31,27 @@ export const Modal = ({ closeModal }) => {
           <ul>
             <li>
               <h3>orderNo</h3>
-              <p></p>
+              <p>{orderNo}</p>
             </li>
             <li>
               <h3>date</h3>
-              <p></p>
+              <p>{date}</p>
             </li>
             <li>
               <h3>customer</h3>
-              <p></p>
+              <p>{customer}</p>
             </li>
             <li>
               <h3>trackingNo</h3>
-              <p></p>
+              <p>{trackingNo}</p>
             </li>
             <li>
               <h3>consignee</h3>
-              <p></p>
+              <p>{consignee}</p>
             </li>
             <li>
               <h3>status</h3>
-              <p></p>
+              <p>{status}</p>
             </li>
           </ul>
         </div>

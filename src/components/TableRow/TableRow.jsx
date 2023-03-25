@@ -13,7 +13,7 @@ export const TableRow = ({ data, onDelete, onShow }) => {
               <td>{status}</td>
               <td>{consignee}</td>
               <td>
-                <button type="button" obj={orderNo} onClick={onShow}>
+                <button type="button" onClick={() => onShow(orderNo)}>
                   show
                 </button>
                 <button type="button" onClick={() => onDelete(orderNo)}>
