@@ -2,7 +2,7 @@
   "name": "react-homework-template",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://NateSSaw.github.io/shipments-Crud-page/",
+  "homepage": "https://natessaw.github.io/shipments-CRUD-page/",
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.3",
     "@testing-library/jest-dom": "^5.16.3",
