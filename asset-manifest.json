@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/shipments-Crud-page/static/css/main.7acaea2f.css",
-    "main.js": "/shipments-Crud-page/static/js/main.06cd6b0b.js",
+    "main.css": "/shipments-Crud-page/static/css/main.442a9d75.css",
+    "main.js": "/shipments-Crud-page/static/js/main.82d20298.js",
     "index.html": "/shipments-Crud-page/index.html",
-    "main.7acaea2f.css.map": "/shipments-Crud-page/static/css/main.7acaea2f.css.map",
-    "main.06cd6b0b.js.map": "/shipments-Crud-page/static/js/main.06cd6b0b.js.map"
+    "main.442a9d75.css.map": "/shipments-Crud-page/static/css/main.442a9d75.css.map",
+    "main.82d20298.js.map": "/shipments-Crud-page/static/js/main.82d20298.js.map"
   },
   "entrypoints": [
-    "static/css/main.7acaea2f.css",
-    "static/js/main.06cd6b0b.js"
+    "static/css/main.442a9d75.css",
+    "static/js/main.82d20298.js"
   ]
 }
