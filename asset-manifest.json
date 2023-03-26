@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/shipments-CRUD-page/static/css/main.442a9d75.css",
-    "main.js": "/shipments-CRUD-page/static/js/main.82d20298.js",
+    "main.js": "/shipments-CRUD-page/static/js/main.5a60203a.js",
     "index.html": "/shipments-CRUD-page/index.html",
     "main.442a9d75.css.map": "/shipments-CRUD-page/static/css/main.442a9d75.css.map",
-    "main.82d20298.js.map": "/shipments-CRUD-page/static/js/main.82d20298.js.map"
+    "main.5a60203a.js.map": "/shipments-CRUD-page/static/js/main.5a60203a.js.map"
   },
   "entrypoints": [
     "static/css/main.442a9d75.css",
-    "static/js/main.82d20298.js"
+    "static/js/main.5a60203a.js"
   ]
 }
