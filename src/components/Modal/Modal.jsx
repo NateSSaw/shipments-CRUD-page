@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-
+import css from './Modal.module.css';
 export const Modal = ({ closeModal, data }) => {
   const { orderNo, date, customer, trackingNo, status, consignee } = data;
   useEffect(() => {
@@ -14,43 +14,44 @@ export const Modal = ({ closeModal, data }) => {
   }, [closeModal]);
 
   return (
-    <div className="modal">
-      <div className="modal-dialog">
-        <div className="modal-header">
-          <h2>Shipment Details</h2>
-
+    <div className={css.modal}>
+      <div className={css.modal__dialog}>
+        <div className={css.modal__header}>
+          <h2 className={css.modal__title}>Shipment Details</h2>
           <button
             type="button"
-            className="btn-close"
+            className={css.btn__close}
             aria-label="Close"
             onClick={closeModal}
-          ></button>
+          >
+            X
+          </button>
         </div>
-        <div className="modal-body">
-          <ul>
-            <li>
-              <h3>orderNo</h3>
-              <p>{orderNo}</p>
+        <div className={css.modal__body}>
+          <ul className={css.modal__list}>
+            <li className={css.modal__item}>
+              <h3 className={css.item__title}>orderNo</h3>
+              <p className={css.item__data}>{orderNo}</p>
             </li>
-            <li>
-              <h3>date</h3>
-              <p>{date}</p>
+            <li className={css.modal__item}>
+              <h3 className={css.item__title}>date</h3>
+              <p className={css.item__data}>{date}</p>
             </li>
-            <li>
-              <h3>customer</h3>
-              <p>{customer}</p>
+            <li className={css.modal__item}>
+              <h3 className={css.item__title}>customer</h3>
+              <p className={css.item__data}>{customer}</p>
             </li>
-            <li>
-              <h3>trackingNo</h3>
-              <p>{trackingNo}</p>
+            <li className={css.modal__item}>
+              <h3 className={css.item__title}>trackingNo</h3>
+              <p className={css.item__data}>{trackingNo}</p>
             </li>
-            <li>
-              <h3>consignee</h3>
-              <p>{consignee}</p>
+            <li className={css.modal__item}>
+              <h3 className={css.item__title}>consignee</h3>
+              <p className={css.item__data}>{consignee}</p>
             </li>
-            <li>
-              <h3>status</h3>
-              <p>{status}</p>
+            <li className={css.modal__item}>
+              <h3 className={css.item__title}>status</h3>
+              <p className={css.item__data}>{status}</p>
             </li>
           </ul>
         </div>

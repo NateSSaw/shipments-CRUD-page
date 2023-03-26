@@ -1,5 +1,6 @@
 import { Modal } from 'components/Modal/Modal';
 import { useState } from 'react';
+
 export const TableRow = ({ data, onDelete }) => {
   const [openedRow, setOpenedRow] = useState({});
   const [isShowModal, setIsShowModal] = useState(false);
@@ -33,6 +34,7 @@ export const TableRow = ({ data, onDelete }) => {
               <td>
                 <button
                   type="button"
+                  className="edit"
                   onClick={() =>
                     handleShow(
                       orderNo,
@@ -43,15 +45,15 @@ export const TableRow = ({ data, onDelete }) => {
                       consignee
                     )
                   }
-                >
-                  show
-                </button>
+                ></button>
                 {isShowModal && (
                   <Modal data={openedRow} closeModal={closeModal}></Modal>
                 )}
-                <button type="button" onClick={() => onDelete(orderNo)}>
-                  delete
-                </button>
+                <button
+                  type="button"
+                  className="delete"
+                  onClick={() => onDelete(orderNo)}
+                ></button>
               </td>
             </tr>
           );
