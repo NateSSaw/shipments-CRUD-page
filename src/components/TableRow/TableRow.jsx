@@ -13,7 +13,7 @@ export const TableRow = ({ data, onDelete }) => {
     consignee
   ) => {
     setIsShowModal(true);
-    setOpenedRow(orderNo, date, customer, trackingNo, status, consignee);
+    setOpenedRow({ orderNo, date, customer, trackingNo, status, consignee });
   };
 
   const closeModal = () => setIsShowModal(false);
