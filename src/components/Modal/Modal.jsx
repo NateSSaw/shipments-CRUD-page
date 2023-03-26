@@ -4,7 +4,6 @@ export const Modal = ({ closeModal, data }) => {
   const { orderNo, date, customer, trackingNo, status, consignee } = data;
   useEffect(() => {
     const handlePressESC = e => {
-      console.log('object :>> ', Date.now());
       if (e.code === 'Escape') closeModal();
     };
 
